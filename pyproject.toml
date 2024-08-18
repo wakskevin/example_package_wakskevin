@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_wakskevin"
+version = "0.0.1"
+authors = [
+  { name="Kevin W. Wakhisi", email="wakskevin@outlook.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/wakskevin/python_packaging_tutorial"
+Issues = "https://github.com/wakskevin/python_packaging_tutorial/issues"
+
+[tool.hatch.build]
+include = [
+  "src/**",
+  "README.md",
+  "LICENSE"
+]
+exclude=[
+  ".gitignore"
+]
