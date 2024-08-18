@@ -1,0 +1,20 @@
+{
+  "name": "example_package_wakskevin",
+  "version": "0.0.1",
+  "description": "`example_package_wakskevin` is a Python package serving as a practical example following the [Python Packaging Tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).",
+  "scripts": {
+    "build": "python3 -m build",
+    "publish:github": "python3 -m twine upload --repository github --config-file ./.pypirc --verbose dist/*",
+    "publish:testpypi": "python3 -m twine upload --repository testpypi dist/*"
+  },
+  "keywords": [
+    "python-packaging",
+    "tutorial",
+    "example",
+    "packaging-project",
+    "development",
+    "best-practices"
+  ],
+  "author": "Kevin W. Wakhisi",
+  "license": "MIT"
+}
