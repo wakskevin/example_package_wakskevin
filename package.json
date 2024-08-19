@@ -4,8 +4,7 @@
   "description": "`example_package_wakskevin` is a Python package serving as a practical example following the [Python Packaging Tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).",
   "scripts": {
     "build": "python3 -m build",
-    "publish:github": "python3 -m twine upload --repository github --config-file ./.pypirc --verbose dist/*",
-    "publish:testpypi": "python3 -m twine upload --repository testpypi dist/*"
+    "publish": "python3 -m twine upload --repository testpypi --config-file ./.pypirc dist/*"
   },
   "keywords": [
     "python-packaging",
