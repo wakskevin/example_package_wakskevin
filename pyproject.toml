@@ -4,29 +4,28 @@ build-backend = "hatchling.build"
 
 [project]
 name = "example_package_wakskevin"
-version = "0.0.1"
-authors = [
-  { name="Kevin W. Wakhisi", email="wakskevin@outlook.com" },
-]
-description = "A small example package"
+version = "0.0.2"
+authors = [{ name = "Kevin Wasike Wakhisi", email = "wakskevin@outlook.com" }]
+description = "`example_package_wakskevin` is a Python package serving as a practical example following the [Python Packaging Tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/)."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+keywords = [
+  "python-packaging",
+  "tutorial",
+  "example",
+  "packaging-project",
+  "development",
+  "best-practices",
 ]
 
 [project.urls]
-Homepage = "https://github.com/wakskevin/python_packaging_tutorial"
-Issues = "https://github.com/wakskevin/python_packaging_tutorial/issues"
+Homepage = "https://github.com/wakskevin/example_package_wakskevin"
+Issues = "https://github.com/wakskevin/example_package_wakskevin/issues"
 
 [tool.hatch.build]
-include = [
-  "src/**",
-  "README.md",
-  "LICENSE"
-]
-exclude=[
-  ".gitignore"
-]
+include = ["example_package_wakskevin/**", "README.md", "LICENSE"]

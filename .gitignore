@@ -4,3 +4,4 @@ __pycache__/
 .pypirc
 .env
 /tests
+/node_modules

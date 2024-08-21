@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from decouple import config
+from termcolor import colored
 
 
 def generate_rc_files():
@@ -18,12 +19,12 @@ def generate_rc_files():
     )
 
     # Get the project folder using pathlib
-    project_folder = Path(__file__).parent.resolve()
+    project_folder = Path(__file__).parent.parent.resolve()
 
     # Write the .pypirc file in the project folder
     pypirc_path = project_folder / ".pypirc"
     pypirc_path.write_text(pypirc_content)
-    print(f".pypirc has been generated at {pypirc_path}")
+    print(colored(f".pypirc has been generated at {pypirc_path}", "green"))
 
 
 if __name__ == "__main__":
